@@ -1,0 +1,163 @@
+/* ============ Root Styles ================ */
+:root {
+    --nav-bg: #009933;
+    --color-white: #fff;
+    --sidebar-bg: #009933f2;
+    --color-black: #000;
+    --base-margin: 1rem;
+    --bg-gold: #f4ff7f;
+    --base-padding: 1rem;
+}
+
+/* ============= Main styles ============= */
+.nav-bg {
+   background-color: var(--nav-bg);
+}
+.sidebar-bg {
+    background-color: var(--sidebar-bg);
+}
+.color-white {
+    color: var(--color-white)!important;
+}
+.bg-gold {
+    color: var(--bg-gold);
+}
+.color-black {
+    color: var(--color-black)!important;
+}
+
+.list-style-none {
+    list-style: none!important;
+}
+
+.base-margin-bottom {
+    margin-bottom: var(--base-margin) !important;
+}
+.base-margin-top {
+    margin-bottom: var(--base-margin) !important;
+}
+
+.base-padding-top {
+    padding-top: var(--base-padding);
+}
+
+.base-padding {
+    padding: var(--base-padding);
+}
+.bg-btn-primary {
+   background-color:  #1e87f0;
+}
+/* ===========  Other Styles ================= */
+html, body {
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url("images/body-bg.gif") no-repeat scroll #F1F1F1;
+    font-family: tahoma, sans-serif;
+}
+
+img {
+    border: 0;
+}
+
+a, a:visited {
+    color: black;
+}
+
+input.uk-checkbox:checked {
+    background-color: #009933;
+}
+
+input.uk-checkbox:checked:focus {
+    background-color: #009933;
+}
+
+.uk-button-primary {
+    background-color: #009933;
+    color: white;
+}
+
+.uk-button-primary:hover, .uk-button-primary:focus {
+    background-color: #00BB3E;
+    color: white;
+}
+
+/* OnClick + Active */
+.uk-button-primary:active, .uk-button-primary.uk-active {
+    background-color: #00BB3E;
+    color: white;
+}
+
+div.progress_bar {
+    background-color: #fff;
+    background-image: url(images/progress-indicator.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0 solid #ddd;
+    height: 50px;
+    width: 90%;
+}
+
+.main_menu_item {
+    padding-left: 10px;
+}
+
+.btn-close svg {
+    width: 25px!important;
+    height: 25px!important;
+    margin: .5rem!important;
+   text-shadow: 1px 1px 2px black, 0 0 3px black;;
+}
+
+.justify-center {
+    justify-content: center!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+
+.box-shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.text-shadow {
+    text-shadow: 1px 1px 2px black, 0 0 3px black;
+}
+.logo-img {
+    width: calc(100% * 1 / 4.001);
+}
+
+.text-ul {
+    font-size: 1.2rem;
+}
+
+.text-hover:hover, .text-hover:active {
+    color: brown!important;
+    text-decoration: underline;
+    text-shadow: none;
+    transition: all .3s;
+}
+
+/*============== Media queries=====================*/
+
+@media (max-width: 576px) {
+    header {
+        padding-top: 0!important;
+    }
+    .text-ul {
+        font-size: 1rem;
+    }
+    .logo-img {
+        width: calc(100% * 1 / 2.001);
+    }
+    .promo {
+        display: none;
+    }
+}
+/*@media (min-width: 577px) {*/
+/*    !*#btn-menu {*!*/
+/*    !*  display: none;*!*/
+/*    !*}*!*/
+/*}*/

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="uk-height-1-1" dir="ltr" lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Личный кабинет</title>
+    <link href="scripts/uikit/css/uikit.min.css" rel="stylesheet"/>
+    <link href="scripts/air-datepicker/css/datepicker.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="scripts/uikit/css/style.css">
+<!--    <script src="scripts/jquery/jquery.js" type="text/javascript"></script>-->
+<!--    <script charset="utf-8" src="scripts/jquery/jquery.mask.js" type="text/javascript"></script>-->
+<!--    <script charset="utf-8" src="scripts/jquery/jquery.color.plus-names-2.1.2.js" type="text/javascript"></script>-->
+
+    <!-- UIkit JS -->
+    <script src="scripts/uikit/js/uikit.min.js"></script>
+    <script src="scripts/uikit/js/uikit-icons.min.js"></script>
+    <script src="scripts/air-datepicker/js/datepicker.js"></script>
+<!--    <script type="text/javascript">-->
+<!--        $(document).ready(function () {-->
+<!--            $('#mob_tel').mask('+7(000)0000000', { clearIfNotMatch: true, placeholder: '+7(___)_______' })-->
+<!--            $('#IncCurrLabel').change(function () {-->
+<!--                $('#RealSum').attr('value', $('#IncCurrLabel option:selected').attr('alt'))-->
+<!--            }).change()-->
+<!--        })-->
+
+<!--        $.fn.pulse = function (options) {-->
+<!--            var options = $.extend({-->
+<!--                times: 3,-->
+<!--                duration: 1000-->
+<!--            }, options)-->
+
+<!--            var period = function (callback) {-->
+<!--                $(this).animate({ opacity: 0 }, options.duration, function () {-->
+<!--                    $(this).animate({ opacity: 1 }, options.duration, callback)-->
+<!--                })-->
+<!--            }-->
+<!--            return this.each(function () {-->
+<!--                var i = +options.times, self = this,-->
+<!--                    repeat = function () {-->
+<!--                        &#45;&#45;i && period.call(self, repeat)-->
+<!--                    }-->
+<!--                period.call(this, repeat)-->
+<!--            })-->
+<!--        }-->
+
+<!--    </script>-->
+</head>
+<body>
+
+<!-- Header -->
+<header class="nav-bg box-shadow base-padding-top">
+    <nav class="uk-navbar-transparent uk-light uk-flex align-items-center uk-flex-column">
+            <div class="logo">
+                <a class="uk-navbar-item uk-logo" href="#">
+                    <img class="logo-img" src="images/logo_silinet_rus.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-list uk-visible@l">
+                <ul class="uk-navbar-nav uk-flex">
+                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/">На сайт</a></li>
+                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/promo.html">Акции</a></li>
+                    <li>
+                        <a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/set/settings.html">Настройки</a>
+                    </li>
+                    <li>
+                        <a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/ip-tv/iptv.html">Телевидение</a>
+                    </li>
+                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/contacts.html">Контакты</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- main -->
+<main class="main">
+    <div class="uk-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar uk-margin-top">
+            <button class="uk-button bg-btn-primary uk-margin-small color-white text-shadow box-shadow btn-main-menu" uk-toggle="target: #offcanvas" type="button">
+                <span class="uk-margin-right">Меню</span><span uk-icon="icon: menu"></span>
+            </button>
+            <div id="offcanvas" uk-offcanvas>
+                <div class="uk-offcanvas-bar sidebar-bg box-shadow uk-padding-small">
+                    <button class="uk-offcanvas-close color-white uk-margin btn-close text-hover text-shadow" type="button" uk-close></button>
+                    <div class="uk-panel uk-text-left uk-padding-small uk-border-rounded uk-box-shadow-small uk-margin-top"
+                         id="main-menu2">
+                        <ul class="uk-nav uk-nav-default uk-list uk-list-divider">
+                            <li class="main_menu_item" id="menu_item_info">
+                                <a class="color-white text-hover text-shadow" href="?plugin=info">Общая информация</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_pay_services">
+                                <a class="color-white text-hover text-shadow" href="?plugin=pay_services">Пополнение счета</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_promised_payment">
+                                <a class="color-white text-hover text-shadow" href="?plugin=promised_payment">Обещанный платеж</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_transfer">
+                                <a class="color-white text-hover text-shadow" href="?plugin=transfer">Перевод между счетами</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_services">
+                                <a class="color-white text-hover text-shadow" href="?plugin=services">Услуги</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_payment">
+                                <a class="color-white text-hover text-shadow" href="?plugin=payment">Отчет по платежам</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_services_report">
+                                <a class="color-white text-hover text-shadow" href="?plugin=services_report">Отчет по списаниям</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_traffic_report">
+                                <a class="color-white text-hover text-shadow" href="?plugin=traffic_report">Отчет по трафику</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_rent">
+                                <a class="color-white text-hover text-shadow" href="?plugin=rent">Аренда оборудования</a>
+                            </li>
+                            <!--
+                            <li class = "main_menu_item" id = "menu_item_rentsoft">
+                                <a href = "?plugin=rentsoft" uk-tooltip = "title: Аренда программ через Rentsoft.ru; pos: left">Аренда программ</a>
+                            </li>-->
+                            <li class="main_menu_item" id="menu_item_tariff">
+                                <a class="color-white text-hover text-shadow" href="?plugin=tariff">Сменить тариф</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_password">
+                                <a class="color-white text-hover text-shadow" href="?plugin=password">Сменить пароль</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_block">
+                                <a class="color-white text-hover text-shadow" href="?plugin=block">Блокировка</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_message">
+                                <a class="color-white text-hover text-shadow" href="?plugin=message">Сообщения</a>
+                            </li>
+                            <li class="main_menu_item" id="menu_item_contacts">
+                                <a class="color-white text-hover text-shadow" href="?plugin=contacts">Мои контакты</a>
+                            <li class="main_menu_item">
+                                <a class="color-black text-hover" href="{php_self}?plugin=logout"><strong>Выход</strong></a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="general-info base-margin-bottom">
+            <!-- <iframe height = "73" scrolling = "no" src = "https://www.silinet.ru/service/450.html" style = "margin: 0px; padding: 0px;" width = "700"></iframe> -->
+            <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
+                <ul class="list-style-none">
+                    <li>
+                        <span><strong>{full_name}</strong></span>
+                    </li>
+
+                    <li>
+                        <span>Адрес:</span>
+                        <span><strong>{actual_address}</strong></span>
+                    </li>
+                    <li>
+                        <span>Ваш баланс:</span>
+                        <sapn><strong>{balance} р.</strong></sapn>
+                    </li>
+                    <li>
+                        <span>Лицевой счёт:</span>
+                        <span><strong>{basic_account}</strong></span>
+                    </li>
+                    <li>
+                        <span>Статус:</span>
+                        <span><strong>{status}</strong></span>
+                    </li>
+                    <li>
+                        <span>Оплачено до:</span>
+                        <span><strong>{paid_till}</strong></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="dynamic-page base-margin-bottom">
+            <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
+                {page}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa quisquam consequatur molestias
+                facere inventore laborum, voluptatibus, quos suscipit nulla a! Sunt a voluptates, harum perferendis iste,
+                mollitia assumenda sapiente porro enim ducimus cumque impedit consectetur eaque iusto molestiae soluta ex.
+                Ducimus culpa quam et molestiae nam eligendi provident illo non distinctio asperiores quisquam esse tempore,
+                ratione accusamus magnam rerum minus cupiditate quos sunt, molestias, qui unde ullam quasi! Repellat
+                consectetur sint iste unde ea! Eius ratione perspiciatis quia fuga et illo veritatis sed. Enim sunt
+                accusamus id velit nihil. Ex sit quis reiciendis animi error nulla facilis iusto necessitatibus aliquid!
+                Assumenda quibusdam quo et, a labore optio minus libero repellat sequi? Ipsam tempore placeat distinctio
+                itaque eum laudantium praesentium, facilis sit quod quos sint eligendi sed deserunt dolore neque minus
+                voluptatibus accusantium at a recusandae. Quidem est beatae recusandae doloremque earum nulla corrupti
+                maxime consequuntur, a dignissimos? Amet, eligendi.
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- footer -->
+<footer>
+    <div class="uk-container">
+        <div class="uk-panel uk-background-default uk-padding-small uk-border-rounded uk-box-shadow-small">
+            <span class="uk-label uk-label-warning">Внимание</span>&nbsp;Все операции, осуществляемые через личный
+            кабинет, считаются самостоятельными
+            действиями абонента и фиксируются на сервере. Ни при каких обстоятельствах не передавайте логин и пароль
+            другим лицам!
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="dialogEmail" uk-modal="esc-close: false; bg-close: false;" class="uk-flex-top">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <form action="" class="uk-form-horizontal" id="emailform">
+            <div class="uk-margin-small">
+                <h3>Уважаемый абонент!</h3>
+                В целях выполнения требований Федерального закона №54-ФЗ "О применении контрольно-кассовой техники при
+                осуществлении расчетов в Российской Федерации" <strong> Вам необходимо ввести свой актуальный электонный
+                адрес</strong> для направления на него контрольно-кассовых чеков об оплате услуг связи.
+            </div>
+            <div class="uk-margin-small">
+                <label class="uk-form-label" for="email">Введите e-mail адрес:</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-form-width-medium uk-form-small" id="email" name="email" required
+                           type="email" uk-tooltip="title: Введите адрес вашей электронной почты; pos: right"
+                           value="{email}"/>
+                </div>
+            </div>
+            <div class="uk-text-center">
+                <button class="uk-button uk-button-primary uk-button-small" type="submit">Отправить</button>
+            </div>
+            <input name="plugin" type="hidden" value="contacts">
+            <input name="action" type="hidden" value="change">
+            <input name="emailonly" type="hidden" value="yes">
+        </form>
+    </div>
+</div>
+<div id="dialogBalance" class="uk-flex-top">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <div class="uk-margin-small">
+            <h3>Уважаемый абонент!</h3>
+            На вашем счете недостаточно средств для оплаты услуг.
+        </div>
+        <div class="uk-text-center">
+            <a class="uk-button uk-button-primary uk-button-small color-white" href="{php_self}?plugin=pay_services">Оплатить</a>
+        </div>
+    </div>
+</div>
+
+<!--<script>-->
+
+<!--    $(document).ready(function () {-->
+
+<!--        if ('{email}' == '') {-->
+<!--            UIkit.modal('#dialogEmail').show()-->
+
+<!--        } else if ('{balance_alert}' == 'y') {-->
+<!--            UIkit.modal('#dialogBalance').show()-->
+
+<!--        } else if ('{system_message}' != '') {-->
+<!--            UIkit.modal.alert('{system_message}')-->
+<!--        }-->
+
+<!--        $('#menu_item_{plugin}').css('background-color', '#E8E8E8')-->
+
+<!--    })-->
+
+<!--</script>-->
+</body>
+
+</html>
