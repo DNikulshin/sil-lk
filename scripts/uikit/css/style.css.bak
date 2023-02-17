@@ -2,7 +2,7 @@
 :root {
     --nav-bg: #009933;
     --color-white: #fff;
-   --sidebar-bg: #009933f5;
+    --sidebar-bg: #009933f2;
     --color-black: #000;
     --base-margin: 1rem;
     --bg-gold: #f4ff7f;
