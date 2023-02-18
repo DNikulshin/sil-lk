@@ -8,67 +8,70 @@
     <link href="scripts/uikit/css/uikit.min.css" rel="stylesheet"/>
     <link href="scripts/air-datepicker/css/datepicker.css" rel="stylesheet"/>
     <link rel="stylesheet" href="scripts/uikit/css/style.css">
-<!--    <script src="scripts/jquery/jquery.js" type="text/javascript"></script>-->
-<!--    <script charset="utf-8" src="scripts/jquery/jquery.mask.js" type="text/javascript"></script>-->
-<!--    <script charset="utf-8" src="scripts/jquery/jquery.color.plus-names-2.1.2.js" type="text/javascript"></script>-->
+    <!--    <script src="scripts/jquery/jquery.js" type="text/javascript"></script>-->
+    <!--    <script charset="utf-8" src="scripts/jquery/jquery.mask.js" type="text/javascript"></script>-->
+    <!--    <script charset="utf-8" src="scripts/jquery/jquery.color.plus-names-2.1.2.js" type="text/javascript"></script>-->
 
     <!-- UIkit JS -->
     <script src="scripts/uikit/js/uikit.min.js"></script>
     <script src="scripts/uikit/js/uikit-icons.min.js"></script>
     <script src="scripts/air-datepicker/js/datepicker.js"></script>
-<!--    <script type="text/javascript">-->
-<!--        $(document).ready(function () {-->
-<!--            $('#mob_tel').mask('+7(000)0000000', { clearIfNotMatch: true, placeholder: '+7(___)_______' })-->
-<!--            $('#IncCurrLabel').change(function () {-->
-<!--                $('#RealSum').attr('value', $('#IncCurrLabel option:selected').attr('alt'))-->
-<!--            }).change()-->
-<!--        })-->
+    <!--    <script type="text/javascript">-->
+    <!--        $(document).ready(function () {-->
+    <!--            $('#mob_tel').mask('+7(000)0000000', { clearIfNotMatch: true, placeholder: '+7(___)_______' })-->
+    <!--            $('#IncCurrLabel').change(function () {-->
+    <!--                $('#RealSum').attr('value', $('#IncCurrLabel option:selected').attr('alt'))-->
+    <!--            }).change()-->
+    <!--        })-->
 
-<!--        $.fn.pulse = function (options) {-->
-<!--            var options = $.extend({-->
-<!--                times: 3,-->
-<!--                duration: 1000-->
-<!--            }, options)-->
+    <!--        $.fn.pulse = function (options) {-->
+    <!--            var options = $.extend({-->
+    <!--                times: 3,-->
+    <!--                duration: 1000-->
+    <!--            }, options)-->
 
-<!--            var period = function (callback) {-->
-<!--                $(this).animate({ opacity: 0 }, options.duration, function () {-->
-<!--                    $(this).animate({ opacity: 1 }, options.duration, callback)-->
-<!--                })-->
-<!--            }-->
-<!--            return this.each(function () {-->
-<!--                var i = +options.times, self = this,-->
-<!--                    repeat = function () {-->
-<!--                        &#45;&#45;i && period.call(self, repeat)-->
-<!--                    }-->
-<!--                period.call(this, repeat)-->
-<!--            })-->
-<!--        }-->
+    <!--            var period = function (callback) {-->
+    <!--                $(this).animate({ opacity: 0 }, options.duration, function () {-->
+    <!--                    $(this).animate({ opacity: 1 }, options.duration, callback)-->
+    <!--                })-->
+    <!--            }-->
+    <!--            return this.each(function () {-->
+    <!--                var i = +options.times, self = this,-->
+    <!--                    repeat = function () {-->
+    <!--                        &#45;&#45;i && period.call(self, repeat)-->
+    <!--                    }-->
+    <!--                period.call(this, repeat)-->
+    <!--            })-->
+    <!--        }-->
 
-<!--    </script>-->
+    <!--    </script>-->
 </head>
 <body>
 
 <!-- Header -->
 <header class="nav-bg box-shadow base-padding-top">
     <nav class="uk-navbar-transparent uk-light uk-flex align-items-center uk-flex-column">
-            <div class="logo">
-                <a class="uk-navbar-item uk-logo" href="#">
-                    <img class="logo-img" src="images/logo_silinet_rus.png" alt="logo">
-                </a>
-            </div>
-            <div class="nav-list uk-visible@l">
-                <ul class="uk-navbar-nav uk-flex">
-                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/">На сайт</a></li>
-                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/promo.html">Акции</a></li>
-                    <li>
-                        <a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/set/settings.html">Настройки</a>
-                    </li>
-                    <li>
-                        <a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/ip-tv/iptv.html">Телевидение</a>
-                    </li>
-                    <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/contacts.html">Контакты</a>
-                    </li>
-                </ul>
+        <div class="logo">
+            <a class="uk-navbar-item uk-logo" href="#">
+                <img class="logo-img" src="images/logo_silinet_rus.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-list uk-visible@l">
+            <ul class="uk-navbar-nav uk-flex">
+                <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/">На сайт</a>
+                </li>
+                <li><a class="color-white text-ul text-hover text-shadow"
+                       href="https://www.silinet.ru/promo.html">Акции</a></li>
+                <li>
+                    <a class="color-white text-ul text-hover text-shadow"
+                       href="https://www.silinet.ru/set/settings.html">Настройки</a>
+                </li>
+                <li>
+                    <a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/ip-tv/iptv.html">Телевидение</a>
+                </li>
+                <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/contacts.html">Контакты</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
@@ -78,42 +81,51 @@
     <div class="uk-container">
 
         <!-- Sidebar -->
-        <div class="sidebar uk-margin-top">
-            <button class="uk-button bg-btn-primary uk-margin-small color-white text-shadow box-shadow btn-main-menu uk-text-nowrap" uk-toggle="target: #offcanvas" type="button">
+        <div class="sidebar uk-flex uk-margin-small-bottom align-items-center flex-gap uk-margin-top base-margin-bottom">
+            <button class="uk-button bg-btn-primary color-white text-shadow box-shadow uk-text-nowrap uk-border-rounded main-menu-btn-hover"
+                    uk-toggle="target: #offcanvas" type="button">
                 <span class="uk-margin-right">Меню</span><span uk-icon="icon: menu"></span>
             </button>
             <div id="offcanvas" uk-offcanvas>
                 <div class="uk-offcanvas-bar sidebar-bg box-shadow uk-padding-small">
-                    <button class="uk-offcanvas-close color-white uk-margin btn-close text-hover text-shadow" type="button" uk-close></button>
+                    <button class="uk-offcanvas-close color-white uk-margin btn-close text-hover text-shadow"
+                            type="button" uk-close></button>
                     <div class="uk-panel uk-text-left uk-padding-small uk-border-rounded uk-box-shadow-small uk-margin-top"
                          id="main-menu2">
-                        <ul class="uk-nav uk-nav-default uk-list uk-list-divider">
+                        <ul class="uk-nav uk-nav-default uk-list uk-list-divider main-menu2-list">
                             <li class="main_menu_item" id="menu_item_info">
                                 <a class="color-white text-hover text-shadow" href="?plugin=info">Общая информация</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_pay_services">
-                                <a class="color-white text-hover text-shadow" href="?plugin=pay_services">Пополнение счета</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=pay_services">Пополнение
+                                    счета</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_promised_payment">
-                                <a class="color-white text-hover text-shadow" href="?plugin=promised_payment">Обещанный платеж</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=promised_payment">Обещанный
+                                    платеж</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_transfer">
-                                <a class="color-white text-hover text-shadow" href="?plugin=transfer">Перевод между счетами</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=transfer">Перевод между
+                                    счетами</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_services">
                                 <a class="color-white text-hover text-shadow" href="?plugin=services">Услуги</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_payment">
-                                <a class="color-white text-hover text-shadow" href="?plugin=payment">Отчет по платежам</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=payment">Отчет по
+                                    платежам</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_services_report">
-                                <a class="color-white text-hover text-shadow" href="?plugin=services_report">Отчет по списаниям</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=services_report">Отчет по
+                                    списаниям</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_traffic_report">
-                                <a class="color-white text-hover text-shadow" href="?plugin=traffic_report">Отчет по трафику</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=traffic_report">Отчет по
+                                    трафику</a>
                             </li>
                             <li class="main_menu_item" id="menu_item_rent">
-                                <a class="color-white text-hover text-shadow" href="?plugin=rent">Аренда оборудования</a>
+                                <a class="color-white text-hover text-shadow" href="?plugin=rent">Аренда
+                                    оборудования</a>
                             </li>
                             <!--
                             <li class = "main_menu_item" id = "menu_item_rentsoft">
@@ -141,35 +153,37 @@
                     </div>
                 </div>
             </div>
+            <a class="color-white text-hover-green text-shadow uk-button bg-gold uk-border-rounded box-shadow uk-overflow-hidden uk-text-nowrap"
+               href="?plugin=pay_services">Пополнить счет</a>
         </div>
 
         <section class="general-info base-margin-bottom">
             <!-- <iframe height = "73" scrolling = "no" src = "https://www.silinet.ru/service/450.html" style = "margin: 0px; padding: 0px;" width = "700"></iframe> -->
-            <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
-                <ul class="list-style-none">
+            <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding uk-border-rounded">
+                <ul class="list-style-none uk-list uk-list-divider">
                     <li>
-                        <span><strong>{full_name}</strong></span>
+                        <span><strong>Тестовый Тест Тестович</strong></span>
                     </li>
 
                     <li>
                         <span>Адрес:</span>
-                        <span><strong>{actual_address}</strong></span>
+                        <span><strong>Подольск, 8Марта 9</strong></span>
                     </li>
                     <li>
                         <span>Ваш баланс:</span>
-                        <sapn><strong>{balance} р.</strong></sapn>
+                        <span><strong>1633,20 р.</strong></span>
                     </li>
                     <li>
                         <span>Лицевой счёт:</span>
-                        <span><strong>{basic_account}</strong></span>
+                        <span><strong>942</strong></span>
                     </li>
                     <li>
                         <span>Статус:</span>
-                        <span><strong>{status}</strong></span>
+                        <span><strong>Активен</strong></span>
                     </li>
                     <li>
                         <span>Оплачено до:</span>
-                        <span><strong>{paid_till}</strong></span>
+                        <span><strong>30 апреля 2023 г.</strong></span>
                     </li>
                 </ul>
             </div>
@@ -177,18 +191,40 @@
 
         <section class="dynamic-page base-margin-bottom">
             <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
-                {page}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa quisquam consequatur molestias
-                facere inventore laborum, voluptatibus, quos suscipit nulla a! Sunt a voluptates, harum perferendis iste,
-                mollitia assumenda sapiente porro enim ducimus cumque impedit consectetur eaque iusto molestiae soluta ex.
-                Ducimus culpa quam et molestiae nam eligendi provident illo non distinctio asperiores quisquam esse tempore,
-                ratione accusamus magnam rerum minus cupiditate quos sunt, molestias, qui unde ullam quasi! Repellat
-                consectetur sint iste unde ea! Eius ratione perspiciatis quia fuga et illo veritatis sed. Enim sunt
-                accusamus id velit nihil. Ex sit quis reiciendis animi error nulla facilis iusto necessitatibus aliquid!
-                Assumenda quibusdam quo et, a labore optio minus libero repellat sequi? Ipsam tempore placeat distinctio
-                itaque eum laudantium praesentium, facilis sit quod quos sint eligendi sed deserunt dolore neque minus
-                voluptatibus accusantium at a recusandae. Quidem est beatae recusandae doloremque earum nulla corrupti
-                maxime consequuntur, a dignissimos? Amet, eligendi.
+                <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded  uk-overflow-auto">
+                    <table class="uk-table uk-table-hover uk-table-divider uk-table-small uk-background-default">
+                        <thead>
+                        <tr>
+                            <th class="uk-table-expand">Услуга</th>
+                            <th class="uk-table-shrink">Аб.плата</th>
+                            <th class="uk-table-shrink uk-text-nowrap">Списано в текущем месяце</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>Предоставление внешнего IP</td>
+                            <td class="uk-text-nowrap"><strong>100,00 р.</strong> р.</td>
+                            <td class="uk-text-nowrap"><strong>100,00</strong> р.</td>
+                        </tr>
+                        <tr>
+                            <td><a uk-tooltip="title: Нажмите, чтобы увидеть информацию об услуге; pos: right"
+                                   href="?plugin=rent&amp;action=service_info&amp;id=32613" title=""
+                                   aria-describedby="uk-tooltip-16">Аренда Роутера</a></td>
+                            <td class="uk-text-nowrap"><strong>69,00 р.</strong> р.</td>
+                            <td class="uk-text-nowrap"><strong>69,00</strong> р.</td>
+                        </tr>
+                        <tr>
+                            <td><a uk-tooltip="title: Нажмите, чтобы увидеть информацию о трафике; pos: right"
+                                   href="?plugin=traffic_report&amp;action=show_traf&amp;id=33164" title=""
+                                   aria-describedby="uk-tooltip-17">Универсальный</a> (80 Мбит/c)
+                            </td>
+                            <td class="uk-text-nowrap"><strong>499,00 р.</strong> р.</td>
+                            <td class="uk-text-nowrap"><strong>320,79</strong> р.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </div>
@@ -265,6 +301,7 @@
 <!--    })-->
 
 <!--</script>-->
+<script src="scripts/uikit/js/script.js"></script>
 </body>
 
 </html>
