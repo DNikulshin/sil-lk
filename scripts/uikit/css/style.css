@@ -2,7 +2,7 @@
 :root {
     --nav-bg: #009933;
     --color-white: #fff;
-   --sidebar-bg: #009933f5;
+    --sidebar-bg: #009933f5;
     --color-black: #000;
     --base-margin: 1rem;
     --bg-gold: rgba(227, 167, 7, 0.87);
@@ -11,28 +11,33 @@
 
 /* ============= Main styles ============= */
 .nav-bg {
-   background-color: var(--nav-bg);
+    background-color: var(--nav-bg);
 }
+
 .sidebar-bg {
     background-color: var(--sidebar-bg);
 }
+
 .color-white {
-    color: var(--color-white)!important;
+    color: var(--color-white) !important;
 }
+
 .bg-gold {
-    background-color: var(--bg-gold)!important;
+    background-color: var(--bg-gold) !important;
 }
+
 .color-black {
-    color: var(--color-black)!important;
+    color: var(--color-black) !important;
 }
 
 .list-style-none {
-    list-style: none!important;
+    list-style: none !important;
 }
 
 .base-margin-bottom {
     margin-bottom: var(--base-margin) !important;
 }
+
 .base-margin-top {
     margin-bottom: var(--base-margin) !important;
 }
@@ -40,6 +45,7 @@
 .base-padding-top {
     padding-top: var(--base-padding);
 }
+
 .base-padding-bottom {
     padding-bottom: var(--base-padding);
 }
@@ -49,14 +55,15 @@
     padding: var(--base-padding);
 }
 
-.bg-btn-primary {
-   background-color:  #1e87f0;
+.bg-btn-green {
+    background-color: #46a528;
 }
+
 /* ===========  Other Styles ================= */
 html, body {
     height: 100%;
     min-height: 100%;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -81,7 +88,7 @@ input.uk-checkbox:checked:focus {
 }
 
 .uk-button-primary {
-    background-color: #009933;
+    background-color: #46a528;
     color: white;
 }
 
@@ -111,25 +118,28 @@ div.progress_bar {
 }
 
 .btn-close svg {
-    width: 25px!important;
-    height: 25px!important;
-    margin: .5rem!important;
-   text-shadow: 1px 1px 2px black, 0 0 3px black;
+    width: 25px !important;
+    height: 25px !important;
+    margin: .5rem !important;
+    text-shadow: 1px 1px 2px black, 0 0 3px black;
 }
 
 .justify-center {
-    justify-content: center!important;
+    justify-content: center !important;
 }
+
 .align-items-center {
-    align-items: center!important;
+    align-items: center !important;
 }
+
 .flex-gap {
-    column-gap: .8rem!important;
+    column-gap: .8rem !important;
 }
 
 .box-shadow {
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 /*.text-shadow {*/
 /*    text-shadow: 1px 1px 2px black, 0 0 3px black;*/
 /*}*/
@@ -142,7 +152,7 @@ div.progress_bar {
 }
 
 .text-hover:hover, .text-hover:active {
-    color: brown!important;
+    color: brown !important;
     text-decoration: underline;
     text-shadow: none;
     transition: all .3s;
@@ -150,22 +160,22 @@ div.progress_bar {
 
 
 .text-hover-green:hover, .text-hover-green:active {
-    color: var(--sidebar-bg)!important;
+    color: var(--sidebar-bg) !important;
     text-shadow: none;
     transition: all .3s;
 }
 
 .main-menu-btn-hover:hover, .main-menu-btn-hover:active {
-   background-color: rgba(30, 135, 240, 0.9) !important;
-    box-shadow: 0 0 1px #1e87f0, 0 0 2px #1e87f0!important;
+    background-color: rgba(70, 165, 40, 0.85) !important;
+    box-shadow: 0 0 1px  #46a528, 0 0 2px  #46a528 !important;
     /*color: #1e87f0!important;*/
     text-shadow: none;
     transition: all .3s;
 }
 
 .active-link {
-    color: brown!important;
-    text-shadow: none!important;
+    color: brown !important;
+    text-shadow: none !important;
 }
 
 .nav {
@@ -173,23 +183,31 @@ div.progress_bar {
     justify-content: space-between;
     align-items: center;
 }
+thead {
+    word-break: break-word!important;
+    white-space: break-spaces!important;
+
+}
 
 /*============== Media queries=====================*/
 
 @media (max-width: 576px) {
     header {
-        padding-top: 0!important;
+        padding-top: 0 !important;
     }
+
     .text-ul {
         font-size: 1rem;
     }
+
     .logo-img {
         width: calc(100% * 2 / 3.001);
     }
+
     .text-sm {
-        font-size: .70rem!important;
-        padding: 0 .75rem!important;
-        margin-left: auto!important;
+        font-size: .70rem !important;
+        padding: 0 .75rem !important;
+        margin-left: auto !important;
     }
 }
 
