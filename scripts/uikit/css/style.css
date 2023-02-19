@@ -1,4 +1,3 @@
-/* ============ Root Styles ================ */
 :root {
     --nav-bg: #009933;
     --color-white: #fff;
@@ -41,6 +40,10 @@
     padding-top: var(--base-padding);
 }
 
+.base-padding-bottom {
+    padding-bottom: var(--base-padding);
+
+}
 .base-padding {
     padding: var(--base-padding);
 }
@@ -53,11 +56,12 @@ html, body {
     height: 100%;
     min-height: 100%;
     overflow: auto;
+
 }
 
 body {
     background: url("/images/body-bg.gif") no-repeat scroll #F1F1F1;
-    font-family: tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -126,9 +130,9 @@ div.progress_bar {
 .box-shadow {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-.text-shadow {
-    text-shadow: 1px 1px 2px black, 0 0 3px black;
-}
+/*.text-shadow {*/
+/*    text-shadow: 0 0 1px white;*/
+/*}*/
 .logo-img {
     width: calc(100% * 1 / 3.001);
 }
@@ -163,33 +167,46 @@ div.progress_bar {
     color: brown!important;
     text-shadow: none!important;
 }
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 /*============== Media queries=====================*/
 
-@media (max-width: 576px) {
+@media (max-width: 668px) {
     header {
-        padding-top: 0!important;
+        padding: 0!important;
     }
     .text-ul {
         font-size: 1rem;
     }
     .logo-img {
-        width: calc(100% * 2 / 3.001);
+        width: calc(100% * 2 / 4.001);
     }
-
-    /*table thead {*/
-    /*    display: none;*/
-    /*}*/
-    /*table tr {*/
-    /*    display: block;*/
-    /*}*/
-    /*table td {*/
-    /*    display: block;*/
-    /*    text—align: right;*/
-    /*}*/
-    /*table td:before {*/
-    /*    content: attr(aria—label);*/
-    /*    float: left;*/
-    /*}*/
+    .text-sm {
+        font-size: .65rem;
+        padding: 0 .5rem;
+        margin-left: auto;
+    }
 }
+
 
 /*==============*table ============*/

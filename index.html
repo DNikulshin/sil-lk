@@ -5,6 +5,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <title>Личный кабинет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="scripts/uikit/css/uikit.min.css" rel="stylesheet"/>
     <link href="scripts/air-datepicker/css/datepicker.css" rel="stylesheet"/>
     <link rel="stylesheet" href="scripts/uikit/css/style.css">
@@ -49,15 +52,15 @@
 <body>
 
 <!-- Header -->
-<header class="nav-bg box-shadow base-padding-top">
-    <nav class="uk-navbar-transparent uk-light uk-flex align-items-center uk-flex-column">
-        <div class="logo">
+<header class="nav-bg box-shadow base-padding-top base-padding-bottom">
+    <nav class="uk-navbar-transparent uk-light nav">
+        <div class="logo uk-width-1-1">
             <a class="uk-navbar-item uk-logo" href="#">
-                <img class="logo-img" src="images/logo_silinet_rus.png" alt="logo">
+                <img class="logo-img" src="images/logo_silinet_rus.svg" alt="logo">
             </a>
         </div>
-        <div class="nav-list uk-visible@l">
-            <ul class="uk-navbar-nav uk-flex">
+        <div class="nav-list uk-visible@l uk-width-1-1">
+            <ul class="uk-navbar-nav uk-flex align-items-center justify-center">
                 <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/">На сайт</a>
                 </li>
                 <li><a class="color-white text-ul text-hover text-shadow"
@@ -153,8 +156,10 @@
                     </div>
                 </div>
             </div>
-            <a class="color-white text-hover-green text-shadow uk-button bg-gold uk-border-rounded box-shadow uk-overflow-hidden uk-text-nowrap"
+            <a class="color-white text-hover-green text-shadow uk-button bg-gold uk-border-rounded box-shadow text-sm"
                href="?plugin=pay_services">Пополнить счет</a>
+            <a href="https://silinet.ru/tariffs/507.html" target="_blank" rel="noopener">
+                <img class="uk-visible@l" src="https://silinet.ru/assets/images/Br/brlk01.png" alt="promo" width="702" height="69"/></a>
         </div>
 
         <section class="general-info base-margin-bottom">
@@ -189,10 +194,10 @@
             </div>
         </section>
 
-        <section class="dynamic-page base-margin-bottom">
+        <section class="dynamic-page base-margin-bottom uk-overflow-auto">
             <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
-                <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded  uk-overflow-auto">
-                    <table class="uk-table uk-table-hover uk-table-divider uk-table-small uk-background-default">
+                <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding-small uk-border-rounded">
+                    <table class="uk-table uk-table-hover uk-table-divider uk-table-small uk-background-default ">
                         <thead>
                         <tr>
                             <th class="uk-table-expand">Услуга</th>
