@@ -187,8 +187,8 @@ div.progress_bar {
         width: calc(100% * 2 / 3.001);
     }
     .text-sm {
-        font-size: .65rem!important;
-        padding: 0 .65rem!important;
+        font-size: .75rem!important;
+        padding: 0 .55rem!important;
         margin-left: auto!important;
     }
 }
