@@ -1,9 +1,11 @@
-const locationSearch = window.location.href
+const locationHref = window.location.href
 const sidebarLink = document.querySelectorAll('.main-menu2-list li a')
 sidebarLink.forEach(link => {
-    if(link?.href === locationSearch) {
+    if(link?.href === locationHref) {
        link.classList.add('active-link')
     }
 })
+
+
 
 
