@@ -258,7 +258,7 @@ thead {
 @media(max-width: 567px) {
 
     .logo-img {
-        max-width: calc(100% * 3 / 2.001);
+        max-width: calc(100% * 4 / 2.001);
     }
     .main_menu_item {
         font-size: 1rem!important;
