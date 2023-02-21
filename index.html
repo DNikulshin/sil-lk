@@ -52,11 +52,10 @@
 <body>
 
 <!-- Header -->
-<header class="nav-bg box-shadow base-padding-top base-padding-bottom base-margin-bottom">
-    <div class="uk-container">
-        <nav class="uk-navbar-transparent uk-light nav uk-flex align-items-center justify-center">
+<header class="nav-bg box-shadow base-padding-top base-margin-bottom header">
+        <nav class="nav">
             <!-- Sidebar -->
-            <div class="sidebar uk-flex uk-margin-small-bottom align-items-center flex-gap uk-margin-top sidebar">
+            <div class="sidebar-mobile uk-margin-small-bottom uk-margin-top">
                 <a class="nav-bg uk-border-rounded"
                    uk-toggle="target: #offcanvas" type="button">
                     <span class="color-white menu-icon main-menu-btn-hover" uk-icon="icon: menu"></span>
@@ -135,14 +134,15 @@
                     </div>
                 </div>
             </div>
-            <div class="logo uk-flex">
-                <a class="uk-navbar-item uk-logo" href="#">
+            <!--logo-->
+            <div class="logo uk-width-1-3">
+                <a class="uk-flex" href="#">
                     <img class="logo-img" src="images/logo_silinet_rus.svg" alt="logo">
                 </a>
             </div>
             <!--nav-->
-            <div class="nav-list uk-visible@l uk-flex uk-text-nowrap">
-                <ul class="uk-navbar-nav uk-flex align-items-center justify-center">
+            <div class="nav-list uk-text-nowrap">
+                <ul class="uk-navbar-nav uk-flex align-items-center">
                     <li><a class="color-white text-ul text-hover text-shadow" href="https://www.silinet.ru/">На сайт</a>
                     </li>
                     <li><a class="color-white text-ul text-hover text-shadow"
@@ -161,16 +161,14 @@
                 </ul>
             </div>
         </nav>
-    </div>
 </header>
 
 <!-- main -->
 <main class="main">
     <div class="uk-container">
-
-        <div class="wrapper uk-flex justify-center uk-flex">
+        <div class="wrapper uk-flex uk-flex uk-width-1-1@l flex-gap">
             <!-- Sidebar-desktop -->
-            <div class="uk-panel uk-padding-small uk-border-rounded uk-box-shadow-small sidebar-bg sidebar-desktop uk-flex uk-text-nowrap"
+            <div class="uk-panel uk-padding-small uk-border-rounded uk-box-shadow-small sidebar-bg sidebar-desktop uk-text-nowrap base-margin-top uk-flex align-self-start"
                  id="main-menu2">
                 <ul class="uk-nav uk-nav-default uk-list uk-list-divider main-menu2-list">
                     <li class="main_menu_item" id="menu_item_info">
@@ -232,15 +230,13 @@
                 </ul>
             </div>
             <!--content-->
-            <div class="content uk-flex uk-flex-column align-items-center uk-margin-small">
-                <section
-                        class="general-info base-margin-bottom uk-overflow-auto uk-flex uk-flex-column base-margin-top uk-width-1-1">
-                    <div class="promo">
+            <div class="content uk-flex uk-flex-column align-items-center uk-width-1-1@l">
+                <section class="general-info base-margin-bottom uk-overflow-auto uk-flex uk-flex-column base-margin-top uk-width-1-1">
+                    <div class="promo uk-flex align-self-center base-margin-bottom">
                         <a href="https://silinet.ru/tariffs/507.html" target="_blank" rel="noopener">
                             <img class="uk-visible@l uk-width-1-1" src="https://silinet.ru/assets/images/Br/brlk01.png"
                                  alt="promo"/></a>
                     </div>
-                    <!-- <iframe height = "73" scrolling = "no" src = "https://www.silinet.ru/service/450.html" style = "margin: 0px; padding: 0px;" width = "700"></iframe> -->
                     <div class="uk-panel uk-background-default uk-box-shadow-small uk-padding uk-border-rounded">
                         <ul class="list-style-none uk-list uk-list-divider">
                             <li>
@@ -270,25 +266,10 @@
                         </ul>
                     </div>
                 </section>
-                <section class="dynamic-page base-margin-bottom uk-overflow-auto base-padding">
-                    {page}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa quisquam consequatur
-                    molestias facere inventore laborum, voluptatibus, quos suscipit nulla a! Sunt a voluptates, harum
-                    perferendis iste, mollitia assumenda sapiente porro enim ducimus cumque impedit consectetur eaque
-                    iusto
-                    molestiae soluta ex. Ducimus culpa quam et molestiae nam eligendi provident illo non distinctio
-                    asperiores quisquam esse tempore, ratione accusamus magnam rerum minus cupiditate quos sunt,
-                    molestias,
-                    qui unde ullam quasi! Repellat consectetur sint iste unde ea! Eius ratione perspiciatis quia fuga et
-                    illo veritatis sed. Enim sunt accusamus id velit nihil. Ex sit quis reiciendis animi error nulla
-                    facilis
-                    iusto necessitatibus aliquid! Assumenda quibusdam quo et, a labore optio minus libero repellat
-                    sequi?
-                    Ipsam tempore placeat distinctio itaque eum laudantium praesentium, facilis sit quod quos sint
-                    eligendi
-                    sed deserunt dolore neque minus voluptatibus accusantium at a recusandae. Quidem est beatae
-                    recusandae
-                    doloremque earum nulla corrupti maxime consequuntur, a dignissimos? Amet, eligendi.
+                <!--dynamic-page-->
+                <section class="dynamic-page uk-overflow-auto uk-width-1-1 base-margin-bottom">
+                  {page}
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias architecto libero magnam quam sed, sequi sit. Aperiam aut culpa cumque dicta dignissimos dolorem explicabo in iste iusto magni molestias nesciunt optio perspiciatis possimus recusandae reiciendis, sit voluptas voluptates. Architecto culpa minus natus necessitatibus optio quasi quos sed ut! Cupiditate eveniet explicabo maiores minus nihil odit omnis quasi quod reiciendis, rerum. Accusamus adipisci consequuntur dicta explicabo, mollitia praesentium quasi quis ut veniam voluptatem? Amet ducimus impedit odio, officiis possimus quod repellat rerum sunt voluptate! Accusamus corporis impedit magni maxime non quis reprehenderit sed similique vel voluptatibus! A, accusantium aperiam, autem commodi dignissimos eius enim iure labore natus nemo nihil numquam odio officia perferendis porro repellendus, soluta voluptas voluptatum! Blanditiis dolorem, doloribus earum ex expedita fuga inventore magnam nesciunt optio pariatur praesentium provident quaerat quam quis, ratione rem sint ullam? Animi est nam nemo optio pariatur possimus quae reiciendis sed tenetur.
                 </section>
                 <!--warning-->
                 <div class="uk-panel uk-background-default uk-padding-small uk-border-rounded uk-box-shadow-small">
@@ -302,7 +283,6 @@
             </div>
 
         </div>
-
     </div>
 </main>
 
@@ -366,6 +346,7 @@
 
 </script>
 <script src="scripts/uikit/js/script.js"></script>
+<!--<script type="module" src="/main.js"></script>-->
 </body>
 
 </html>
