@@ -5,12 +5,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <title>Личный кабинет</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="scripts/uikit/css/uikit.min.css" rel="stylesheet"/>
-    <link href="scripts/air-datepicker/css/datepicker.css" rel="stylesheet"/>
     <link rel="stylesheet" href="scripts/uikit/css/style.css">
+    <link href="scripts/air-datepicker/css/datepicker.css" rel="stylesheet"/>
     <script src="scripts/jquery/jquery.js" type="text/javascript"></script>
     <script charset="utf-8" src="scripts/jquery/jquery.mask.js" type="text/javascript"></script>
     <script charset="utf-8" src="scripts/jquery/jquery.color.plus-names-2.1.2.js" type="text/javascript"></script>
@@ -328,25 +325,25 @@
 
 <script>
 
-    $(document).ready(function () {
+   $(document).ready(function () {
 
-        if ('{email}' == '') {
-            UIkit.modal('#dialogEmail').show()
+       if ('{email}' == '') {
+           UIkit.modal('#dialogEmail').show()
 
-        } else if ('{balance_alert}' == 'y') {
-            UIkit.modal('#dialogBalance').show()
+       } else if ('{balance_alert}' == 'y') {
+           UIkit.modal('#dialogBalance').show()
 
-        } else if ('{system_message}' != '') {
-            UIkit.modal.alert('{system_message}')
-        }
+       } else if ('{system_message}' != '') {
+           UIkit.modal.alert('{system_message}')
+       }
 
-        $('#menu_item_{plugin}').css('background-color', '#E8E8E8')
+       $('#menu_item_{plugin}').css('background-color', '#E8E8E8')
 
-    })
+   })
 
 </script>
 <script src="scripts/uikit/js/script.js"></script>
-<!--<script type="module" src="/main.js"></script>-->
+<script type="module" src="/main.js"></script>
 </body>
 
 </html>
