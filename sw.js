@@ -1,15 +1,3 @@
-// self.addEventListener('install', (event) => {
-//     console.log('Установлен');
-// });
-//
-// self.addEventListener('activate', (event) => {
-//     console.log('Активирован');
-// });
-//
-// self.addEventListener('fetch', (event) => {
-//     console.log('Происходит запрос на сервер');
-// });
-
 const CACHE = 'offline-fallback-v1'
 
 // При установке воркера мы должны закешировать часть данных (статику).
@@ -21,27 +9,33 @@ self.addEventListener('install', (event) => {
                 [
                     '/',
                     '/index.html',
-                    'images',
-                    'images/body-bg.gif',
-                    'images/logo_silinet_rus.svg',
-                    'images/promo.png',
-                    'assets',
-                    'scripts/uikit/fonts/roboto/regular-400.woff2',
-                    'scripts/uikit/css/style.css',
-                    'scripts/uikit/css/uikit.css',
-                    'scripts/uikit/css/uikit.min.css',
-                    'scripts/uikit/css/uikit-rtl.css',
-                    'scripts/uikit/css/uikit-rtl.min.css',
-                    'scripts/air-datepicker/css/datepicker.css',
-                    'scripts/uikit/js/script.js',
-                    'scripts/uikit/js/uikit.js',
-                    'scripts/uikit/js/uikit.min.js',
-                    'scripts/uikit/js/uikit-icons.js',
-                    'scripts/uikit/js/uikit-icons.min.js',
-                    'scripts/jquery/jquery.js',
-                    'scripts/jquery/jquery.mask.js',
-                    'scripts/air-datepicker/js/datepicker.js',
-                    'scripts/jquery/jquery.color.plus-names-2.1.2.js'
+                    '/images/body-bg.gif',
+                    '/images/logo_silinet_rus.svg',
+                    '/images/no-internet.jpg',
+                    '/images/promo.png',
+                    '/assets/android-chrome-192x192.png',
+                    '/assets/android-chrome-256x256.png',
+                    '/assets/android-chrome-512x512.png',
+                    '/assets/apple-touch-icon.png',
+                    '/assets/favicon-16x16.png',
+                    '/assets/favicon-32x32.png',
+                    '/assets/safari-pinned-tab.svg',
+                    '/scripts/uikit/fonts/roboto/regular-400.woff2',
+                    '/scripts/uikit/css/style.css',
+                    '/scripts/uikit/css/uikit.css',
+                    '/scripts/uikit/css/uikit.min.css',
+                    '/scripts/uikit/css/uikit-rtl.css',
+                    '/scripts/uikit/css/uikit-rtl.min.css',
+                    '/scripts/air-datepicker/css/datepicker.css',
+                    '/scripts/uikit/js/script.js',
+                    '/scripts/uikit/js/uikit.js',
+                    '/scripts/uikit/js/uikit.min.js',
+                    '/scripts/uikit/js/uikit-icons.js',
+                    '/scripts/uikit/js/uikit-icons.min.js',
+                    '/scripts/jquery/jquery.js',
+                    '/scripts/jquery/jquery.mask.js',
+                    '/scripts/air-datepicker/js/datepicker.js',
+                    '/scripts/jquery/jquery.color.plus-names-2.1.2.js'
                 ]))
             // `skipWaiting()` необходим, потому что мы хотим активировать SW
             // и контролировать его сразу, а не после перезагрузки.
@@ -69,11 +63,43 @@ function networkOrCache(request) {
 }
 
 //Fallback.
-const FALLBACK =
-    `<div style="width: 100%;  display: flex; justify-content: center; align-items: center">
-      <h1 style="display: flex;">Нет интернета, режим оффлайн.&nbsp;<a href="/">На Главную</a></h1>
-</div>
-    `
+const FALLBACK = `
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+h1 {
+color: brown;
+font-size: 3rem;
+text-align: center;
+
+}
+.no-internet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #009933f5;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden!important;
+}
+.no-internet-img {
+    max-width: 50%;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+</style>
+<div class="no-internet">
+<img class="no-internet-img" src="images/no-internet.jpg" alt="Нет интернета!">
+      <h1>Нет интернета, режим оффлайн.<br/><a href="/">На Главную</a></h1>
+</div>`
 
 // Он никогда не упадет, т.к мы всегда отдаем заранее подготовленные данные.
 function useFallback() {
