@@ -91,7 +91,6 @@ text-align: center;
     background-color: #009933f5;
     padding: 0;
     margin: 0;
-    overflow-x: hidden!important;
 }
 .no-internet-img {
     max-width: 50%;
