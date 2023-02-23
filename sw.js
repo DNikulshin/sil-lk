@@ -71,6 +71,9 @@ padding: 0;
 box-sizing: border-box;
 
 }
+html, body {
+overflow: hidden!important;
+}
 
 h1 {
 color: brown;
