@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
                     '/index.html',
                     '/images/body-bg.gif',
                     '/images/logo_silinet_rus.svg',
-                    '/images/no-internet.jpg',
+                    '/images/no-internet.png',
                     '/images/promo.png',
                     '/assets/android-chrome-192x192.png',
                     '/assets/android-chrome-256x256.png',
@@ -44,14 +44,11 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener('activate', (event) => {
-    // `self.clients.claim()` позволяет SW начать перехватывать запросы с самого начала,
-    // это работает вместе с `skipWaiting()`, позволяя использовать `fallback` с самых первых запросов.
     event.waitUntil(self.clients.claim())
 })
 
 self.addEventListener('fetch', function (event) {
-    // Можете использовать любую стратегию описанную выше.
-    // Если она не отработает корректно, то используейте `Embedded fallback`.
+    // Если не отработает корректно, то используейте `Embedded fallback`.
     event.respondWith(networkOrCache(event.request)
         .catch(() => useFallback()))
 })
@@ -77,7 +74,7 @@ overflow: hidden!important;
 
 h1 {
 color: brown;
-font-size: 3rem;
+font-size: 1rem;
 text-align: center;
 
 }
@@ -93,14 +90,30 @@ text-align: center;
     margin: 0;
 }
 .no-internet-img {
-    max-width: 50%;
-    width: 40%;
+    max-width: 15%;
+    max-height: 35%;
+    width: 15%;
+    overflow: hidden;
     margin-bottom: 2rem;
+}
+@media (min-width: 320px) and (max-width: 992px){
+h1 {
+color: brown;
+text-align: center;
+font-size: 2rem;
+}
+.no-internet-img {
+    max-width: 30%;
+    max-height: 50%;
+    width: 25%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
 }
 </style>
 <div class="no-internet">
-<img class="no-internet-img" src="images/no-internet.jpg" alt="Нет интернета!">
-      <h1>Нет интернета, режим оффлайн.<br/><a href="/">На Главную</a></h1>
+<img class="no-internet-img" src="images/no-internet.png" alt="Нет интернета!">
+      <h1>Нет интернета или сервер недоступен, <br/><strong style="color: blue;">режим оффлайн.</strong><br/><br/><a href="/">На Главную</a></h1>
 </div>`
 
 // Он никогда не упадет, т.к мы всегда отдаем заранее подготовленные данные.

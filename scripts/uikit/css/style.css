@@ -224,6 +224,10 @@ thead {
 .header {
     padding: 0 1rem;
 }
+. .logo-img {
+    width: fit-content;
+    width: -moz-fit-content;
+}
 /*============== Media queries=====================*/
 
 @media (max-width:  768px) {
