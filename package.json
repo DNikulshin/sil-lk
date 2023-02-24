@@ -1,0 +1,21 @@
+{
+  "name": "sil-lk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "serve": "http-server -p 3456 -o",
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DNikulshin/sil-lk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DNikulshin/sil-lk/issues"
+  },
+  "homepage": "https://github.com/DNikulshin/sil-lk#readme"
+}
