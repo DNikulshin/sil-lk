@@ -224,9 +224,17 @@ thead {
 .header {
     padding: 0 1rem;
 }
-. .logo-img {
+.logo-img {
     width: fit-content;
     width: -moz-fit-content;
+}
+
+#btn-install {
+    position: absolute!important;
+    bottom: 1rem;
+    right: 2rem;
+    background: blueviolet;
+    z-index: 9999!important;
 }
 /*============== Media queries=====================*/
 
