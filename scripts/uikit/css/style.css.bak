@@ -20,11 +20,11 @@
 
 /* ============= Main styles ============= */
 .nav-bg {
-    background-color: var(--nav-bg)!important;
+    background-color: var(--nav-bg);
 }
 
 .sidebar-bg {
-    background-color: var(--sidebar-bg)!important;
+    background-color: var(--sidebar-bg);
 }
 
 .color-white {
@@ -32,7 +32,7 @@
 }
 
 .bg-gold {
-    background-color: var(--bg-gold)!important;
+    background-color: var(--bg-gold) !important;
 }
 
 .color-black {
@@ -223,7 +223,6 @@ thead {
 }
 .header {
     padding: 0 1rem;
-	max-height: 35vh!important;
 }
 .logo-img {
     width: fit-content;
@@ -236,9 +235,6 @@ thead {
     right: 2rem;
     background: blueviolet;
     z-index: 9999!important;
-}
-#btn-install:hover {
-    background: var(--sidebar-bg)!important;
 }
 /*============== Media queries=====================*/
 
